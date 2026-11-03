@@ -1,0 +1,6 @@
+{
+  "name": "CampusConnect — USC Event & Attendance Platform",
+  "description": "Centralized campus event discovery, registration, attendance tracking, and organization management platform for the University of San Carlos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  /* University of San Carlos Theme Palette */
+  --usc-green: #1E8A3E;
+  --usc-green-dark: #146B2E;
+  --usc-green-light: #E8F5EC;
+
+  --usc-blue: #1E7FC4;
+  --usc-blue-dark: #156299;
+  --usc-blue-light: #EBF5FB;
+
+  --usc-red: #D62828;
+  --usc-red-dark: #AD1D1D;
+  --usc-red-light: #FDECEC;
+
+  --usc-gold: #E8B923;
+  --usc-gold-dark: #B88E0F;
+  --usc-gold-light: #FEF9E7;
+
+  /* Neutrals */
+  --surface-white: #FFFFFF;
+  --surface-gray: #F5F7F6;
+  --surface-border: #E2E8E4;
+  --surface-muted: #EBEEEC;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --text-muted: #6B7280;
+}
+
+@theme {
+  --color-usc-green: var(--usc-green);
+  --color-usc-green-dark: var(--usc-green-dark);
+  --color-usc-green-light: var(--usc-green-light);
+
+  --color-usc-blue: var(--usc-blue);
+  --color-usc-blue-dark: var(--usc-blue-dark);
+  --color-usc-blue-light: var(--usc-blue-light);
+
+  --color-usc-red: var(--usc-red);
+  --color-usc-red-dark: var(--usc-red-dark);
+  --color-usc-red-light: var(--usc-red-light);
+
+  --color-usc-gold: var(--usc-gold);
+  --color-usc-gold-dark: var(--usc-gold-dark);
+  --color-usc-gold-light: var(--usc-gold-light);
+
+  --color-surface-white: var(--surface-white);
+  --color-surface-gray: var(--surface-gray);
+  --color-surface-border: var(--surface-border);
+  --color-surface-muted: var(--surface-muted);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--surface-white);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
